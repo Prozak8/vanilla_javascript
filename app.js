@@ -7,7 +7,22 @@ var budgetController = (function() {
 
     return {
         publicTest: function(b) {
-            console.log(add(b))
+            return add(b)
         }
     }
 })();
+
+var UIController = (function() {
+
+})();
+
+var controller = (function(budgetCtrl, uiCtrl) {
+    var z = budgetCtrl.publicTest(5);
+
+    return  {
+        anotherPublic: function() {
+            console.log(z);
+        }
+    }
+
+})(budgetController, UIController);
