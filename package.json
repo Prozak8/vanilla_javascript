@@ -1,0 +1,11 @@
+{
+  "name": "budget_planner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Prozak8/vanilla_javascript.git",
+  "author": "Zak <zakary.howard94@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "superstatic": "^6.0.4"
+  }
+}
