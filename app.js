@@ -98,7 +98,7 @@ var UIController = (function() {
         incomeContainer: '.income__list',
         expenseContainer: '.expenses__list',
         budgetLabel: '.budget__value',
-        incomeLabel: 'budget__income--value',
+        incomeLabel: '.budget__income--value',
         expensesLabel: '.budget__expenses--value',
         percentageLabel: '.budget__expenses--percentage'
     };
@@ -152,8 +152,7 @@ var UIController = (function() {
             document.querySelector(DOMstrings.incomeLabel).textContent = obj.totalInc;
             document.querySelector(DOMstrings.expensesLabel).textContent = obj.totalExp;
             document.querySelector(DOMstrings.percentageLabel).textContent = obj.percentage;
-
-        },
+        }, 
 
         getDOMstrings: function() {
             return DOMstrings;
